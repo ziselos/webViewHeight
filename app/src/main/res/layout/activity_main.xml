@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="zisis.example.com.webviewheight.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/titleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Article Title"/>
+
+        <WebView
+            android:id="@+id/articleWebView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/titleTextView"
+            android:layout_marginTop="20dp">
+
+        </WebView>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/articlePlainTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Article main text.... Lorem ipsum dolor sit amet, assum hendrerit deterruisset nam an, has debet omittantur an. Libris constituam mediocritatem eam no, prompta insolens ea cum. Sea dictas copiosae officiis in. Duo an mucius mentitum.
+"
+            android:layout_below="@+id/articleWebView"
+            android:layout_marginTop="20dp"/>
+
+    </RelativeLayout>
+
+</ScrollView>
